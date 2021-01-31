@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Module-3 Assignment</title>
+    <title>David Chu's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -15,10 +15,19 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+
           <div class="navbar-brand">
-            <a href="index.html"><h1>Food, LLC</h1></a>
+            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
           </div>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -27,219 +36,73 @@
         </div>
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-            <li>
-              <a href="#chicken">Chicken</a>
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
-              <a href="#beef">Beef</a>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
             <li>
-              <a href="#sushi">Sushi</a>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
-<div id="content-heading" class="text-center">
-    <h2>Our Menu</h2>
-</div>
-  <div id="main-content" class="container">
-    <div id="chicken" class="row">
-        <div class="col-xs-12 recipe">
-            <h3>Chicken</h3>
-            <p>
-                Raw chicken may contain Salmonella. The safe minimum cooking temperature recommended by the U.S. Department
-                of Health
-                &
-                Human Services is 165 °F (74 °C) to prevent foodborne illness because of bacteria and parasites.[31]
-                However, in
-                Japan
-                raw chicken is sometimes consumed in a dish called torisashi, which is sliced raw chicken served in sashimi
-                style.
-                Another preparation is toriwasa which is lightly seared on the outsides while the inside remains raw.[32]
-    
-                Chicken can be cooked in many ways. It can be made into sausages, skewered, put in salads, traditionally
-                grilled or
-                by
-                using electric grill, breaded and deep-fried, or used in various curries. There is significant variation in
-                cooking
-                methods amongst cultures. Historically common methods include roasting, baking, broasting, and frying.
-                Western
-                cuisine
-                frequently has chicken prepared by deep frying for fast foods such as fried chicken, chicken nuggets,
-                chicken
-                lollipops
-                or Buffalo wings. They are also often grilled for salads or tacos.
-    
-                Chickens often come with labels such as "roaster", which suggest a method of cooking based on the type of
-                chicken.
-                While
-                these labels are only suggestions, ones labeled for stew often do not do well when cooked with other
-                methods.[33]
-    
-                Some chicken breast cuts and processed chicken breast products include the moniker "with rib meat". This is
-                a
-                misnomer,
-                as it refers to the small piece of white meat that overlays the scapula, removed along with the breast meat.
-                The
-                breast
-                is cut from the chicken and sold as a solid cut, while the leftover breast and true rib meat is stripped
-                from the
-                bone
-                through mechanical separation for use in chicken franks, for example. Breast meat is often sliced thinly and
-                marketed as
-                chicken slices, an easy filling for sandwiches. Often, the tenderloin (pectoralis minor) is marketed
-                separately from
-                the
-                breast (pectoralis major). In the US, "tenders" can be either tenderloins or strips cut from the breast. In
-                the UK
-                the
-                strips of pectoralis minor are called "chicken mini-fillets".
-    
-                Chicken bones are hazardous to health as they tend to break into sharp splinters when eaten, but they can be
-                simmered
-                with vegetables and herbs for hours or even days to make chicken stock.
-    
-                In Asian countries it is possible to buy bones alone as they are very popular for making chicken soups,
-                which are
-                said
-                to be healthy. In Australia the rib cages and backs of chickens after the other cuts have been removed are
-                frequently
-                sold cheaply in supermarket delicatessen sections as either "chicken frames" or "chicken carcasses" and are
-                purchased
-                for soup or stock purposes.
-            </p>
-        </div>
-    </div>
-    <div id="beef" class="row">
-        <div class="col-xs-12 recipe">
-            <h3>Beef</h3>
-            <p>
-                Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef
-                since
-                prehistoric times.[1] Beef is a source of high-quality protein and nutrients.[2]
-    
-                Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short
-                ribs or
-                steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other
-                cuts are
-                processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older,
-                leaner
-                (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties
-                called blood
-                sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue,
-                tripe from the
-                reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the
-                brain
-                (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to
-                as mad cow
-                disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries,
-                prairie oysters,
-                or Rocky Mountain oysters). Some intestines are cooked and eaten as is,[3] but are more often cleaned and
-                used as
-                natural sausage casings. The bones are used for making beef stock. Meat from younger cows (calves) is called
-                veal.
-    
-                Beef from steers and heifers is similar.[4] Depending on economics, the number of heifers kept for breeding
-                varies. The
-                meat from older bulls, because it is usually tougher, is frequently used for mince (known as ground beef in
-                the United
-                States). Cattle raised for beef may be allowed to roam free on grasslands, or may be confined at some stage
-                in pens as
-                part of a large feeding operation called a feedlot (or concentrated animal feeding operation), where they
-                are usually
-                fed a ration of grain, protein, roughage and a vitamin/mineral preblend.
-    
-                Beef is the third most widely consumed meat in the world, accounting for about 25% of meat production
-                worldwide, after
-                pork and poultry at 38% and 30% respectively.[5] In absolute numbers, the United States, Brazil, and the
-                People's
-                Republic of China are the world's three largest consumers of beef; Uruguay, however, has the highest beef
-                and veal
-                consumption per capita, followed by Argentina and Brazil. According to the data from OECD, the average
-                Uruguayan ate
-                over 42 kg (93 lb) of beef or veal in 2014, representing the highest beef/veal consumption per capita in the
-                world. In
-                comparison, the average American consumed only about 24 kg (53 lb) beef or veal in the same year, while
-                African
-                countries, such as Mozambique, Ghana, and Nigeria, consumed the least beef or veal per capita.
-    
-                In 2018, the United States, Brazil, and China produced the most beef with 12.22 million tons, 9.9 million
-                tons, and 6.46
-                million tons respectively.[6] The top 3 beef exporting countries in 2019 were Australia (14.8% of total
-                exports), the
-                United States (13.4% of total exports), and Brazil (12.6% of total exports).[7] Beef production is also
-                important to the
-                economies of Argentina, Uruguay, Canada, Paraguay, Mexico, Belarus and Nicaragua.
-            </p>
-        </div>
-    </div>
-    <div id="sushi" class="row">
-        <div class="col-xs-12 recipe">
-            <h3>Sushi</h3>
-            <p>
-                Futomaki is a more popular variation of sushi within the United States, and comes in variations that take
-                their names
-                from their places of origin. Other rolls may include a variety of ingredients, including chopped scallops,
-                spicy tuna,
-                beef or chicken teriyaki roll, okra, and assorted vegetables such as cucumber and avocado, and the tempura
-                roll, where
-                shrimp tempura is inside the roll or the entire roll is battered and fried tempura-style. In the Southern
-                United States,
-                many sushi restaurants prepare rolls using crawfish. Sometimes, rolls are made with brown rice or black
-                rice, which
-                appear in Japanese cuisine as well.
-    
-                Per Food and Drug Administration regulations, raw fish served in the United States must be frozen prior to
-                serving in
-                order to kill parasites.[40] Because of this and the relative difficulty of acquiring fresh seafood compared
-                to Japan,
-                raw seafood (e.g., sashimi) is not as prevalent a component in American-style sushi.
-    
-                Since rolls are often made to-order it is not unusual for the customer to specify the exact ingredients
-                desired (e.g.
-                salmon roll, cucumber roll, avocado roll, tuna roll, shrimp or tuna tempura roll, etc.)
-                Sushi-meshi 鮨飯 (also known as Su-meshi 酢飯, shari 舎利, or gohan ご飯) is a preparation of white, short-grained,
-                Japanese
-                rice mixed with a dressing consisting of rice vinegar, sugar, salt, and occasionally kombu and sake. It has
-                to be cooled
-                to room temperature before being used for a filling in a sushi or else it will get too sticky while being
-                seasoned.
-                Traditionally, the mixing is done with a hangiri, which is a round, flat-bottom wooden tub or barrel, and a
-                wooden
-                paddle (shamoji).
-    
-                Sushi rice is prepared with short-grain Japanese rice, which has a consistency that differs from long-grain
-                strains such
-                as those from India, Sri Lanka, Bangladesh, Thailand, and Vietnam. The essential quality is its stickiness
-                or
-                glutinousness, although the type of rice used for sushi is different from glutinous rice. Freshly harvested
-                rice
-                (shinmai) typically contains too much water, and requires extra time to drain the rice cooker after washing.
-                In some
-                fusion cuisine restaurants, short-grain brown rice and wild rice are also used.
-    
-                There are regional variations in sushi rice and individual chefs have their individual methods. Most of the
-                variations
-                are in the rice vinegar dressing: the Kantō region (or East Japan) version of the dressing commonly uses
-                more salt; in
-                Kansai region (or West Japan), the dressing has more sugar.
-            </p>
-        </div>
-    </div>
-  </div><!-- End of #main-content -->
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+  <div id="main-content" class="container"></div>
 
   <footer class="panel-footer">
     <div class="container">
-      <div class="text-center">&copy; Food, LLC</div>
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
     </div>
   </footer>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
